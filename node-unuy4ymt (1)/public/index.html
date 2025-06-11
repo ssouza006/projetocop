@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Entrar - COP30 Chat</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+  
+    .container {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: #00796b;
+      border: none;
+      color: #a7ffeb;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #1de9b6;
+      color: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">COP30 Chat</h1>
+    <p class="subtitle">Entre na conversa sobre o futuro do clima</p>
+    <p class="subtitle">Meio de suporte para integrantes da Cop30</p>
+
+    <form id="auth-form" class="login-form">
+      <input
+        type="text"
+        id="username"
+        placeholder="Seu nome"
+        required
+        autocomplete="off"
+      />
+      <select id="room" required>
+        <option value="" disabled selected>Escolha a sala</option>
+        <option value="Sala Verde">Recpção de informações COP30</option>
+        <option value="Sala COP30">Sala de usuarios COP30</option>
+        <option value="Sala Clima">Sala Clima</option>
+      </select>
+      <button type="submit" class="btn">Entrar</button>
+    </form>
+
+    <p id="message" style="color: #f44336; text-align:center; margin-top: 15px;"></p>
+  </div>
+
+  <script src="/js/login.js"></script>
+</body>
+</html>
